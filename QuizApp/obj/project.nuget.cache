@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "TOYeX/SwjI/wI2zsr1xaPfGV3bdtk/A9pLOnS7OACHd7eExapYeLRgJnnNW7P2SqjrFhYHEsb50sS+9ISNGSdA==",
+  "dgSpecHash": "7aiqLgv8Gvii0KZxhvdcIZEdvTzcRzuuxiE9F1nWixwLG+qXhFuAe8FHf2vh+ajiqBvh9LOtDudNqXiEttLaaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yadma\\source\\repos\\QuizApp\\QuizApp\\QuizApp.csproj",
+  "projectFilePath": "C:\\Users\\Kristoffer\\Desktop\\KozzQuizReact\\QuizApp\\QuizApp\\QuizApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\yadma\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.4\\microsoft.aspnetcore.spaservices.extensions.5.0.4.nupkg.sha512",
-    "C:\\Users\\yadma\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\yadma\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
-    "C:\\Users\\yadma\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
-    "C:\\Users\\yadma\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.4\\microsoft.aspnetcore.spaservices.extensions.5.0.4.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
