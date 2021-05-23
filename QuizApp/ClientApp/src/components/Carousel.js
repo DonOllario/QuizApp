@@ -124,3 +124,6 @@ export class Carousel extends Component {
         );
     }
 }
+
+//Slideshown importeras och sedan används följande kod för att implementera den:
+//<Carousel/>
