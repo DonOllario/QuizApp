@@ -167,19 +167,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kristoffer\\.nuget\\packages\\": {}
+    "C:\\Users\\Oliver\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kristoffer\\Desktop\\KozzQuizReact\\QuizApp\\QuizApp\\QuizApp.csproj",
+      "projectUniqueName": "C:\\Users\\Oliver\\Desktop\\Webbutveckling\\HandelsAkademin\\Webbapplikationer\\Projekt Grupp 3\\QuizApp\\QuizApp\\QuizApp.csproj",
       "projectName": "QuizApp",
-      "projectPath": "C:\\Users\\Kristoffer\\Desktop\\KozzQuizReact\\QuizApp\\QuizApp\\QuizApp.csproj",
-      "packagesPath": "C:\\Users\\Kristoffer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kristoffer\\Desktop\\KozzQuizReact\\QuizApp\\QuizApp\\obj\\",
+      "projectPath": "C:\\Users\\Oliver\\Desktop\\Webbutveckling\\HandelsAkademin\\Webbapplikationer\\Projekt Grupp 3\\QuizApp\\QuizApp\\QuizApp.csproj",
+      "packagesPath": "C:\\Users\\Oliver\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Oliver\\Desktop\\Webbutveckling\\HandelsAkademin\\Webbapplikationer\\Projekt Grupp 3\\QuizApp\\QuizApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kristoffer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Oliver\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
