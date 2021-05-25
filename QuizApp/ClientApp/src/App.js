@@ -7,6 +7,7 @@ import { Counter } from './components/Counter';
 import { Carousel } from './components/Carousel';
 
 import './custom.css'
+import { UserInfo } from './components/UserInfo';
 
 export default class App extends Component {
   static displayName = App.name;
@@ -19,7 +20,11 @@ export default class App extends Component {
       //  <route path='/counter' component={counter} />
       //  <route path='/fetch-data' component={fetchdata} />
       //</layout>
-          <Carousel/>
+          <div>
+          <Carousel />
+          
+              <UserInfo />
+            </div>
     );
   }
 }
