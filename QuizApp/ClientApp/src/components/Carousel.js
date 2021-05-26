@@ -39,7 +39,7 @@ export class Carousel extends Component {
             // Update the current order of the carouselArray and gallery
             setCurrentState(direction) {
 
-                if (direction.className == 'gallery-controls-previous') {
+                if (direction.className === 'gallery-controls-previous') {
                     this.carouselArray.unshift(this.carouselArray.pop());
                 } else {
                     this.carouselArray.push(this.carouselArray.shift());
@@ -75,10 +75,10 @@ export class Carousel extends Component {
                     control.addEventListener('click', e => {
                         e.preventDefault();
 
-                        if (control.className == 'gallery-controls-add') {
+                        if (control.className === 'gallery-controls-add') {
                             const newItem = document.createElement('img');
                             const latestItem = this.carouselArray.length;
-                            const latestIndex = this.carouselArray.findIndex(item => item.getAttribute('data-index') == this.carouselArray.length) + 1;
+                            const latestIndex = this.carouselArray.findIndex(item => item.getAttribute('data-index') === this.carouselArray.length) + 1;
 
                             // Assign the necessary properties for new gallery item
                             Object.assign(newItem, {
