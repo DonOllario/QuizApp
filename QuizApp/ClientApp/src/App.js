@@ -8,6 +8,8 @@ import { Carousel } from './components/Carousel';
 
 import './custom.css'
 import { UserInfo } from './components/UserInfo';
+import { Score } from './components/Score';
+
 
 export default class App extends Component {
   static displayName = App.name;
@@ -21,7 +23,10 @@ export default class App extends Component {
       //  <route path='/fetch-data' component={fetchdata} />
       //</layout>
           <div>
-          <Carousel />
+              <Carousel />
+
+
+              <Score />
           
               <UserInfo />
             </div>

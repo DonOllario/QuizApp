@@ -1,0 +1,27 @@
+﻿body {
+}
+
+h2 {
+    color: #00233A;
+}
+
+.score {
+    border-style: solid;
+    border-radius: 6px;
+    border-color: #1D7A8C;
+    background-color: #1D7A8C;
+    padding: 3px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 27rem;
+    height: 32rem;
+    text-align: center;
+}
+
+.KozzQuiz_logo_blue {
+    height: 10rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+
