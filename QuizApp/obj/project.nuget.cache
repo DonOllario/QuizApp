@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Aa6QGfL2OIqK7F/ekti+YK397BSlWavghExWh90/88FQe229trZU0JNEjuNa9zTar/SnTc0Iolr07tYYvZ1n+A==",
+  "dgSpecHash": "7aiqLgv8Gvii0KZxhvdcIZEdvTzcRzuuxiE9F1nWixwLG+qXhFuAe8FHf2vh+ajiqBvh9LOtDudNqXiEttLaaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Oliver\\Desktop\\Webbutveckling\\HandelsAkademin\\Webbapplikationer\\Projekt Grupp 3\\QuizApp\\QuizApp\\QuizApp.csproj",
+  "projectFilePath": "C:\\Users\\Kristoffer\\Desktop\\KozzQuizReact\\QuizApp\\QuizApp\\QuizApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Oliver\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.4\\microsoft.aspnetcore.spaservices.extensions.5.0.4.nupkg.sha512",
-    "C:\\Users\\Oliver\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\Oliver\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
-    "C:\\Users\\Oliver\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
-    "C:\\Users\\Oliver\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.4\\microsoft.aspnetcore.spaservices.extensions.5.0.4.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kristoffer\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

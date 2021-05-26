@@ -1,0 +1,44 @@
+body{
+    background-color: #00233A;
+}
+h1{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.quiz-div{
+    margin-top: 150px;
+    text-align: center;
+
+}
+
+.bg-green {
+    color: white;
+    background-color: green;
+}
+
+.bg-red {
+    color: white;
+    background-color: red;
+}
+
+.btn-next{
+    transition-duration: 0.4s;
+    border-style: solid;
+    height: 4.5rem;
+    width: 25rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    border-color: #1D7A8C;
+    background-color: #1D7A8C;
+    color: #00233A;
+}
+
+.btn-next:hover {
+    background-color: #00233A;
+    color: #1D7A8C;
+}
