@@ -1,32 +1,49 @@
 import React from 'react';
+import { Frontpage_logo } from './Frontpage_logo';
 import './Questionnaire.css';
-import { DefaultButton_pink } from './DefaultButton_pink';
+import './DefaultButton_pink.css';
 
 const Questionnaire = ( { 
-    handleAnswer, data: {question, correct_answer, incorrect_answers},
+    showAnswers,
+    handleAnswer,
+    handleNextQuestion,
+    data: {question, correct_answer, answers},
 } ) => {
-
-    const shuffledAnswers = [correct_answer, ...incorrect_answers].sort(() => Math.random() - 0.5);
-
 
     return (
     <div>
+        <div className="quiz-div d-flex flex-column justify-content-center align-items-center">
+        <Frontpage_logo />
+        <div>
         <h1 dangerouslySetInnerHTML={{ __html: question }} />
-        <br />
-        <DefaultButton_pink onClick={() => handleAnswer(shuffledAnswers[0])}
-            value={shuffledAnswers[0]} />
-        <br />
-        <DefaultButton_pink onClick={() => handleAnswer(shuffledAnswers[1])}
-            value={shuffledAnswers[1]} />
-        <br />
-        <DefaultButton_pink onClick={() => handleAnswer(shuffledAnswers[2])}
-            value={shuffledAnswers[2]} />
-        <br />
-        <DefaultButton_pink onClick={() => handleAnswer(shuffledAnswers[3])}
-            value={shuffledAnswers[3]} />
+        </div>
 
+        <div >
+        {answers.map((answer) => {
+            const rightOrWrongColor = showAnswers ? answer == correct_answer ? 
+            'bg-green' 
+            : 'bg-red' 
+            : 'button_pink';
+
+            return (
+            <button
             
+                className = {`${rightOrWrongColor} button d-flex flex-column justify-content-center align-items-center `}
+                onClick={() => handleAnswer (answer)}
+                dangerouslySetInnerHTML={{ __html: answer }}/>
+        )})}
+        </div>
+        {showAnswers && (
+        <button 
+        onClick={handleNextQuestion}
+        className="btn-next">
+            Next Question
+        </button>
+        )}
+        </div> 
     </div>
+    
 )};
+
 
 export default Questionnaire;
