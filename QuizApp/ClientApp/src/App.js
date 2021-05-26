@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Frontpage } from './components/Frontpage';
-import { Highscore } from './components/Highscore';
+import  { Highscore }  from './components/Highscore';
 import QuestionPage from './components/QuestionPage';
 import { HeaderLogin } from './components/HeaderLogin';
 import { HeaderProfile } from './components/HeaderProfile';

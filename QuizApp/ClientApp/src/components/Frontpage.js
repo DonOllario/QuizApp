@@ -5,7 +5,6 @@ import { DefaultButton_pink } from './DefaultButton_pink';
 import { DefaultButton_blue } from './DefaultButton_blue';
 import { Frontpage_logo } from './Frontpage_logo';
 import { Link } from "react-router-dom";
-import { Highscore } from './Highscore';
 
 export class Frontpage extends Component {
 
