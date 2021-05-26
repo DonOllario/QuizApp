@@ -1,0 +1,19 @@
+﻿.background {
+    margin-top: 150px;
+    text-align: center;
+}
+
+
+.button_blue {
+    height: 4.5rem;
+    width: 25rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    border-color: #1D7A8C;
+    background-color: #00233A;
+    color: #1D7A8C;
+    text-decoration-color: #ED8074;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 150px;
+}

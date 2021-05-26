@@ -7,7 +7,7 @@ export class Frontpage_logo extends Component {
     render() {
         return (
 
-            <img className="kozz_logo" src={ Kozz_logo }/> 
+            <img className="kozz_logo" src={ Kozz_logo } alt="KozzQuiz logo"/> 
 
         );
     }

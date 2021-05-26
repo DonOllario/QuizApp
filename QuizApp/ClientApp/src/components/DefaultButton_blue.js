@@ -6,7 +6,8 @@ export class DefaultButton_blue extends Component {
     render() {
         return (
 
-            <button className="button button_blue">{this.props.value}</button>
+            <button
+                className="button button_blue">{this.props.value}</button>
 
         );
     }
