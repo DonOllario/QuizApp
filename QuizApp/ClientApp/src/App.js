@@ -9,6 +9,7 @@ import { DefaultButton_pink } from './components/DefaultButton_pink';
 import { DefaultButton_blue } from './components/DefaultButton_blue';
 import { Frontpage_logo } from './components/Frontpage_logo';
 import {HeaderLogin} from './components/HeaderLogin';
+import {HeaderProfile} from './components/HeaderProfile';
 
 import './custom.css';
 
