@@ -1,6 +1,7 @@
 ﻿.background {
-    margin-top: 150px;
+    padding-top: 150px;
     text-align: center;
+    background-color: #00233A;
 }
 
 
@@ -16,4 +17,8 @@
     font-size: 2rem;
     cursor: pointer;
     margin-bottom: 150px;
+}
+
+body {
+    background-color:#00233A;
 }

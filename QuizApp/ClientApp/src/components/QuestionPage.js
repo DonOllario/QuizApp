@@ -33,6 +33,7 @@ function QuestionPage() {
         //Check for the answer
         //Show another question
         //Change score if correct
+
         
         if(!showAnswers) { //prevent double answers
             if(answer === questions[currentIndex].correct_answer){
