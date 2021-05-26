@@ -17,6 +17,7 @@ export class HeaderProfile extends Component {
                 <button type="button" className="header-login header-login-button dropbtn"><img className="profile-img" src={profileImage} alt="blue-owl"></img>Profile</button>
             </Link>
 
+
         </header>
         );
     }

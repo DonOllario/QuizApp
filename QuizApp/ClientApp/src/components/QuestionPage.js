@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './QuestionPage.css';
-import { Question } from './Question';
-import { DefaultButton_pink } from './DefaultButton_pink';
 import Questionnaire from './Questionnaire';
 
 
@@ -10,14 +8,23 @@ const API_URL = 'https://opentdb.com/api.php?amount=10&type=multiple';
 function QuestionPage() {
 
     const [questions, setQuestions] = useState([]);
-    const [currentQuestion, setCurrentQuestion] = useState(undefined);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [score, setScore] = useState(0);
+    const [showAnswers, setShowAnswers] = useState(false);
 
     useEffect(() => {
         fetch(API_URL)
             .then((res) => res.json())
             .then((data) => {
-                setQuestions(data.results);
-                setCurrentQuestion(data.results[0]);
+                const questions = data.results.map((question) =>
+                ({
+                    ...question,
+                    answers: [
+                        question.correct_answer,
+                        ...question.incorrect_answers,
+                    ].sort(() => Math.random() - 0.5),
+                }));
+                setQuestions(questions);
             });
     }, []);
 
@@ -26,16 +33,36 @@ function QuestionPage() {
         //Check for the answer
         //Show another question
         //Change score if correct
+
+        
+        if(!showAnswers) { //prevent double answers
+            if(answer === questions[currentIndex].correct_answer){
+                setScore(score +1)
+            }
+        }
+        setShowAnswers(true);
+    };
+
+    const handleNextQuestion = () => {
+        setShowAnswers(false);
+
+        setCurrentIndex(currentIndex + 1);
     }
 
-
-
-    return questions.length > 0 ? (
+    return questions.length > 0 ? ( 
         <div>
-            <Questionnaire data={questions[0]} handleAnswer={handleAnswer}/>
+        {currentIndex >= questions.length ? (
+        <h1 className="questionInfo">Game finished! Your score was: {score}</h1>
+    ) : (
+            <Questionnaire 
+            data={questions[currentIndex]}
+            showAnswers={showAnswers} 
+            handleNextQuestion={handleNextQuestion}
+            handleAnswer={handleAnswer}/>
+        )}
         </div>
     ) : (
-        <h1>Laddar data..</h1>
+        <h1 className="questionInfo" >Laddar data..</h1>
     );
 }
 
