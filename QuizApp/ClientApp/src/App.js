@@ -8,6 +8,8 @@ import { Carousel } from './components/Carousel';
 import { DefaultButton_pink } from './components/DefaultButton_pink';
 import { DefaultButton_blue } from './components/DefaultButton_blue';
 import { Frontpage_logo } from './components/Frontpage_logo';
+//import { Highscores } from './components/Highscores';
+import { Link } from 'react-router-dom';
 
 import './custom.css'
 
@@ -22,11 +24,12 @@ export default class App extends Component {
               <br/>
                   <DefaultButton_pink
                       value="Test1" />
-                  <br/>
+              <br />
                       <DefaultButton_blue
-                  value="Test2" />
+                      value="Test2"/>
               <br/>
-              <Carousel/>
+              <Carousel />
+              {/*<Highscores />*/}
 
           </div>
 

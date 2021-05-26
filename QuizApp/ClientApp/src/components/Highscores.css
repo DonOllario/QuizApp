@@ -1,0 +1,63 @@
+﻿body {
+    background-color: #00233A;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: #ED8074;
+    text-align: center;
+}
+
+P {
+    color: #ED8074;
+    text-align: center;
+}
+
+.profile_pic_img {
+    height: 15rem;
+    margin-top: 5rem;
+}
+
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #1D7A8C;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #1D7A8C;
+    margin: 5rem 35rem 0 35rem;
+}
+
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+        background-color: inherit;
+        color: #9abdd4;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #2aa0b8;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #166170;
+        }
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #1D7A8C;
+    border-radius: 0px 0px 5px 5px;
+    border-top: none;
+    margin-left: 35rem;
+    margin-right: 35rem;
+}
