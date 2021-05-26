@@ -9,7 +9,7 @@ export class HeaderLogin extends Component {
             <a href="index.html">
                 <img className="header-home-img" src={homeImage} alt="home_logo"></img>
             </a>
-            <button type="button" class="header-login-button banner_login align-items-center" data-toggle="modal" data-target="#logInModal"><i class="account-icon fas fa-user-circle fa-2x"></i><span >Log in</span></button>
+            <button type="button" class="header-login-button align-items-center" data-toggle="modal" data-target="#logInModal"><i class="account-icon fas fa-user-circle fa-2x"></i><span >Log in</span></button>
         </header>
         );
     }
