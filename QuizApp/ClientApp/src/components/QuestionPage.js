@@ -26,7 +26,8 @@ function QuestionPage() {
         //Check for the answer
         //Show another question
         //Change score if correct
-    };
+    }
+
 
 
     return questions.length > 0 ? (
