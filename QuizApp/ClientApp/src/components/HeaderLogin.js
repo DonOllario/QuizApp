@@ -10,7 +10,9 @@ export class HeaderLogin extends Component {
             <Link to="/">
                 <img className="header-home-img" src={homeImage} alt="home_logo"></img>
             </Link>
-            <button type="button" class="header-login-button align-items-center" data-toggle="modal" data-target="#logInModal"><i class="account-icon fas fa-user-circle fa-2x"></i><span >Log in</span></button>
+            <Link to="/FormLogin">
+                <button type="button" class="header-login-button align-items-center" data-toggle="modal" data-target="#logInModal"><i class="account-icon fas fa-user-circle fa-2x"></i><span >Log in</span></button>
+            </Link>
         </header>
         );
     }

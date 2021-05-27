@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './QuestionPage.css';
 import Questionnaire from './Questionnaire';
+import { DefaultButton_blue } from './DefaultButton_blue';
+import { DefaultButton_pink } from './DefaultButton_pink';
 
 
 const API_URL = 'https://opentdb.com/api.php?amount=10&type=multiple';
@@ -52,7 +54,13 @@ function QuestionPage() {
     return questions.length > 0 ? ( 
         <div>
         {currentIndex >= questions.length ? (
-        <h1 className="questionInfo">Game finished! Your score was: {score}</h1>
+        <div>
+        <h1 className="questionInfo">Game finished! Your score is: {score}/10</h1>
+            <div>
+            <DefaultButton_blue value="Return to main menu"/>
+            <DefaultButton_pink value="Venture Now"/>
+            </div>
+        </div>
     ) : (
             <Questionnaire 
             data={questions[currentIndex]}
