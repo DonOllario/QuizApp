@@ -5,7 +5,7 @@ import QuestionPage from './components/QuestionPage';
 import Header from './components/Header';
 import { UserInfo } from './components/UserInfo';
 import FormSignup from './components/form/FormSignup';
-import FormLogin from './components/form/FormLoginProps';
+import FormLogin from './components/form/FormLogin';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import './custom.css';

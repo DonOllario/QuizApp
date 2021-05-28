@@ -2,24 +2,26 @@ body{
     background-color: #00233A;
 }
 h1{
-    color: white;
+    color: #F1F1E6;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 4rem 14rem 4rem 14rem  ;
 }
 
 .quiz-div{
     margin-top: 150px;
     text-align: center;
 
-}
+}   
 
 .bg-green {
-    color: white;
-    background-color: green;
+    color: #F1F1E6;
+    background-color:#38A275;
 }
 
 .bg-red {
-    color: white;
-    background-color: red;
+    color: #F1F1E6;
+    background-color: #E0332D;
+    
 }
 
 .btn-next{
