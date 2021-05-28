@@ -24,7 +24,15 @@ function QuestionPage() {
                         ...question.incorrect_answers,
                     ].sort(() => Math.random() - 0.5),
                 }));
-                setQuestions(questions);
+              setQuestions(questions);
+              fetch('api/gamerounds', {
+                method: 'POST',
+                body: JSON.stringify({ numberOfQuestions: 10 }),
+                headers: {
+                  'Content-Type': 'application/json'
+                }
+              }).then(response => response.json())
+                .then(data => console.log(data));
             });
     }, []);
 
