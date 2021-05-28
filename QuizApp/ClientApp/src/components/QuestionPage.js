@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './QuestionPage.css';
 import Questionnaire from './Questionnaire';
+import { DefaultButton_blue } from './DefaultButton_blue';
+import { DefaultButton_pink } from './DefaultButton_pink';
+import { Link } from "react-router-dom";
+import CaptureDarkBlue from '../assets/CaptureDarkBlue.PNG';
+import './DefaultButton_pink.css';
+
 
 
 const API_URL = 'https://opentdb.com/api.php?amount=10&type=multiple';
@@ -60,7 +66,21 @@ function QuestionPage() {
     return questions.length > 0 ? ( 
         <div>
         {currentIndex >= questions.length ? (
-        <h1 className="questionInfo">Game finished! Your score was: {score}</h1>
+            <div>
+                <h1 className="questionInfo">Awesome Adventure! You got: {score}/10 points</h1>
+                <div>
+                    <img src={CaptureDarkBlue} alt='CaptureDarkBlue' />
+                    <div class="display-6 heading-font mb-3">
+                        <h1>More daring adventures are yet to come!</h1>
+                    </div>
+                </div>
+                <div>
+                    <Link to="/">
+                    <DefaultButton_blue value="Return to main menu"/>
+                    </Link>
+                    <button className="button button_pink" onClick={() => window.location.reload(false)}>Venture Now</button>
+                </div>
+            </div>
     ) : (
             <Questionnaire 
             data={questions[currentIndex]}
