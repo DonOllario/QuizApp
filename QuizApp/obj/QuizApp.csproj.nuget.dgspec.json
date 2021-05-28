@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Oliver\\Desktop\\Webbutveckling\\HandelsAkademin\\Webbapplikationer\\Projekt Grupp 3\\QuizApp\\QuizApp\\QuizApp.csproj": {}
+    "D:\\Repositories\\grupparbeten webbapplikationer\\QuizApp\\QuizApp\\QuizApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Oliver\\Desktop\\Webbutveckling\\HandelsAkademin\\Webbapplikationer\\Projekt Grupp 3\\QuizApp\\QuizApp\\QuizApp.csproj": {
+    "D:\\Repositories\\grupparbeten webbapplikationer\\QuizApp\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oliver\\Desktop\\Webbutveckling\\HandelsAkademin\\Webbapplikationer\\Projekt Grupp 3\\QuizApp\\QuizApp\\QuizApp.csproj",
-        "projectName": "QuizApp",
-        "projectPath": "C:\\Users\\Oliver\\Desktop\\Webbutveckling\\HandelsAkademin\\Webbapplikationer\\Projekt Grupp 3\\QuizApp\\QuizApp\\QuizApp.csproj",
-        "packagesPath": "C:\\Users\\Oliver\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oliver\\Desktop\\Webbutveckling\\HandelsAkademin\\Webbapplikationer\\Projekt Grupp 3\\QuizApp\\QuizApp\\obj\\",
+        "projectUniqueName": "D:\\Repositories\\grupparbeten webbapplikationer\\QuizApp\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "D:\\Repositories\\grupparbeten webbapplikationer\\QuizApp\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Erik\\.nuget\\packages\\",
+        "outputPath": "D:\\Repositories\\grupparbeten webbapplikationer\\QuizApp\\Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Oliver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Erik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 20.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -40,9 +46,99 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Repositories\\grupparbeten webbapplikationer\\QuizApp\\QuizApp\\QuizApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Repositories\\grupparbeten webbapplikationer\\QuizApp\\QuizApp\\QuizApp.csproj",
+        "projectName": "QuizApp",
+        "projectPath": "D:\\Repositories\\grupparbeten webbapplikationer\\QuizApp\\QuizApp\\QuizApp.csproj",
+        "packagesPath": "C:\\Users\\Erik\\.nuget\\packages\\",
+        "outputPath": "D:\\Repositories\\grupparbeten webbapplikationer\\QuizApp\\QuizApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Erik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Repositories\\grupparbeten webbapplikationer\\QuizApp\\Data\\Data.csproj": {
+                "projectPath": "D:\\Repositories\\grupparbeten webbapplikationer\\QuizApp\\Data\\Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
             "Microsoft.AspNetCore.SpaServices.Extensions": {
               "target": "Package",
               "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
             }
           },
           "imports": [
@@ -63,7 +159,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
