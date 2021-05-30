@@ -1,0 +1,92 @@
+body{
+    background-color: #00233A;
+}
+h1{
+    color: #F1F1E6;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 4rem 14rem 4rem 14rem  ;
+}
+
+.quiz-div{
+    margin-top: 150px;
+    text-align: center;
+
+}   
+
+.bg-green {
+    color: #F1F1E6;
+    background-color:#38A275;
+}
+
+.bg-red {
+    color: #F1F1E6;
+    background-color: #E0332D;
+    
+}
+
+.btn-next{
+    transition-duration: 0.4s;
+    border-style: solid;
+    height: 4.5rem;
+    width: 25rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    border-color: #1D7A8C;
+    background-color: #1D7A8C;
+    color: #00233A;
+}
+
+.btn-next:hover {
+    background-color: #00233A;
+    color: #1D7A8C;
+}
+
+/*Owl image and thinking gif */
+.owl-img{
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+    display: inline-block;
+}
+
+.thinkingCloud-size{
+    width: 150px; 
+    height: 150px;
+    position: relative;
+    display: inline-block;
+} 
+
+/*Font sizes to use if we need */
+.display-5{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.display-6 {
+    font-size: 2rem;
+    /* font-weight: 700; */
+    line-height: 1.2;
+}
+
+.display-7 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.display-8 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.display-9 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
