@@ -1,4 +1,6 @@
 using Data;
+using Data.Models;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
@@ -22,6 +24,16 @@ namespace QuizApp
         {
             var connectionstring = Configuration.GetConnectionString("Default");
             services.SetupDatabaseWithEntityFramework(connectionstring);
+
+            services.AddDefaultIdentity<QuizAppUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<QuizAppDbContext>();
+
+            services.AddIdentityServer()
+                .AddApiAuthorization<QuizAppUser, QuizAppDbContext>();
+
+            services.AddAuthentication()
+                .AddIdentityServerJwt();
+
             services.AddControllersWithViews();
 
             // In production, the React files will be served from this directory
@@ -51,11 +63,16 @@ namespace QuizApp
 
             app.UseRouting();
 
+            app.UseAuthentication();
+            app.UseIdentityServer();
+            app.UseAuthorization();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
+                endpoints.MapRazorPages(); // Remove when you have your own login pages
             });
 
             app.UseSpa(spa =>
