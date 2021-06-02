@@ -25,7 +25,9 @@ namespace Data
         {
             modelBuilder
                 .ApplyConfiguration(new GameRoundConfiguration())
-                .ApplyConfiguration(new QuestionStatisticConfiguration());
+                .ApplyConfiguration(new QuestionStatisticConfiguration())
+                .ApplyConfiguration(new CategoryConfiguration())
+                .ApplyConfiguration(new QuizAppUserConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
