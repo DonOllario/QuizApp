@@ -33,6 +33,28 @@ namespace QuizApp.Controllers
             return Ok(response);
         }
 
+        [HttpGet]
+        public async Task<ActionResult<GameRoundResponse>> GetGameRounds(GameRound round)
+        {
+            var gameRounds = await _context.FindAsync<GameRound>();
+
+            var gameRoundFromDb =  await _context.GameRounds.FindAsync(round);
+            var gameRoundResponses = new List<GameRoundResponse>();
+
+            foreach (var gameRound in gameRoundFromDb)
+            {
+                var gameRoundResponse = new GameRoundResponse
+                {
+                    Id = gameRoundFromDb.Id,
+                    NumberOfQuestions = gameRoundFromDb.NumberOfQuestions,
+                    TimeEnded = gameRoundFromDb.TimeEnded,
+                    TimeStarted = gameRoundFromDb.TimeStarted
+                };
+                gameRoundResponses.Add(gameRound);
+
+                return Ok(gameRounds);
+        }
+
         [HttpPost]
         public async Task<ActionResult<GameRoundResponse>> AddGameRound([FromBody] AddGameRoundRequest request)
         {
