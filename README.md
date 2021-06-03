@@ -1,7 +1,7 @@
 # QuizApp
 
 ---Introduction:
-Hi! We are the KOZZ Organization. That consists of the following members: Kristoffer, Zeynab, Oliver, Zara and Yad.
+Hi! We are the KOZZ Organization. That consists of the following members: Kristoffer, Oliver, Zeynab, Zara and Yad.
 
 QuizApp is a schoolproject associated with HandelsAkademin.
 We chose to do a QuizApp because we'd thought it to be fun to learn how to code the gamemechanics and integrate an existing API.
