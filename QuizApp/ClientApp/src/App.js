@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AuthorizeRoute from './components/api-authorization/AuthorizeRoute';
 import ApiAuthorizationRoutes from './components/api-authorization/ApiAuthorizationRoutes';
 import { ApplicationPaths } from './components/api-authorization/ApiAuthorizationConstants';
+import AboutToFly from './components/AboutToFly';
 
 import './custom.css';
 
@@ -25,9 +26,10 @@ export default class App extends Component {
           <Route exact path='/' component={Frontpage} />
           <Route path='/FormLogin' component={FormLogin} />
           <Route path='/FormSignup' component={FormSignup} />
+          <Route path='/AboutToFly' component={AboutToFly} />
           <Route path='/QuestionPage' component={QuestionPage} />
           <Route path='/Highscore' component={Highscore} />
-          {/*<Route path='/UserInfo' component={UserInfo} />*/}
+          <Route path='/UserInfo' component={UserInfo} />
           <AuthorizeRoute path='/UserInfo' component={UserInfo} />
           <Route path={ApplicationPaths.ApiAuthorizationPrefix} component={ApiAuthorizationRoutes} />
         </Switch>

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Frontpage_logo } from './Frontpage_logo';
 import './Questionnaire.css';
 import './DefaultButton_pink.css';
+import headerImage from '../assets/KozzQuiz_logo_header.png';
 
 const Questionnaire = ( { 
     showAnswers,
@@ -13,12 +13,16 @@ const Questionnaire = ( {
     return (
     <div>
         <div className="quiz-div d-flex flex-column justify-content-center align-items-center">
-        <Frontpage_logo />
+        <div>
+        <img src="https://video-public.canva.com/VAEbzf43_6s/v/bb3cda5406.gif"
+                    className="thinkingCloud-size mx-auto mb-1"></img> 
+        <img className="owl-img" src={headerImage}></img>
+        </div>
         <div>
         <h1 dangerouslySetInnerHTML={{ __html: question }} />
         </div>
 
-        <div >
+        <div>
         {answers.map((answer) => {
             const rightOrWrongColor = showAnswers ? answer == correct_answer ? 
             'bg-green' 
