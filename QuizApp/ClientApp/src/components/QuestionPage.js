@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './QuestionPage.css';
 import Questionnaire from './Questionnaire';
 import { DefaultButton_blue } from './DefaultButton_blue';
-import { DefaultButton_pink } from './DefaultButton_pink';
 import { Link } from "react-router-dom";
-import CaptureDarkBlue from '../assets/CaptureDarkBlue.PNG';
+import BlueIdea from '../assets/BlueIdea.png';
 import './DefaultButton_pink.css';
 
 
@@ -67,18 +66,20 @@ function QuestionPage() {
         <div>
         {currentIndex >= questions.length ? (
             <div>
-                <h1 className="questionInfo">Awesome Adventure! You got: {score}/10 points</h1>
-                <div>
-                    <img src={CaptureDarkBlue} alt='CaptureDarkBlue' />
-                    <div class="display-6 heading-font mb-3">
-                        <h1>More daring adventures are yet to come!</h1>
+                <h1 className="questionInfo mb-2">Awesome Adventure! You got: {score} out of 10 points!</h1>
+                <div className="lightBulb">
+                    <img className="lightBulbSize mb-2" src={BlueIdea} alt='BlueIdea' />
+                    <div class="display-6">
+                        <h1 className="mt-2">More daring adventures are yet to come!</h1>
+                        <img src="https://video-public.canva.com/VAEJyoG5qTU/v/664bb31503.gif"
+                    class="bookAnimation-size mx-auto mb-1"></img>
                     </div>
                 </div>
-                <div>
+                <div className="d-flex justify-content-center"> 
                     <Link to="/">
-                    <DefaultButton_blue value="Return to main menu"/>
+                    <DefaultButton_blue value="Return to main menu" className="mr-3"/>
                     </Link>
-                    <button className="button button_pink" onClick={() => window.location.reload(false)}>Venture Now</button>
+                    <button className="button button_pink ml-3" onClick={() => window.location.reload(false)}>Venture Now</button>
                 </div>
             </div>
     ) : (
@@ -90,8 +91,10 @@ function QuestionPage() {
         )}
         </div>
     ) : (
-        <h1 className="questionInfo" >Laddar data..</h1>
+        <h1 className="questionInfo" >Taking off...</h1>
     );
 }
 
 export default QuestionPage;
+
+ 

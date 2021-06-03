@@ -13,7 +13,7 @@ export class Frontpage extends Component {
             <div className="background">
                 <Frontpage_logo />
                 <br />
-                <Link to="/QuestionPage">
+                <Link to="/AboutToFly">
                 <DefaultButton_pink
                     value="Play" />
                 </Link>
