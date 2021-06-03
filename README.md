@@ -41,7 +41,7 @@ You also need to have SSMS SQL installed on your computer.
 
 2. You will get a random question generated from a public API with 4 answers.
 
-3. Click on the answer that you think is correct. You will then recieve the correct answer showed in green and the incorrect in red colors.
+3. Click on the answer that you think is correct. You will then receive the correct answer showed in green and the incorrect in red colors.
 
 4. Click Next Question to go to next question.
 
