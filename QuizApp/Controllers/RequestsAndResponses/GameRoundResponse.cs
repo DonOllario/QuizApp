@@ -7,7 +7,7 @@ namespace QuizApp.Controllers.RequestsAndResponses
 {
     public class GameRoundResponse
     {
-        public Guid Id { get; set; }
+        public Guid GameRoundId { get; set; }
         public int NumberOfQuestions { get; set; }
         public DateTime TimeStarted { get; set; }
         public DateTime? TimeEnded { get; set; }
