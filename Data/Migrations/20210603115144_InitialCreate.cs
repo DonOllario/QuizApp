@@ -3,30 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Data.Migrations
 {
-    public partial class Login : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<DateTime>(
-                name: "TimeStarted",
-                table: "QuestionStatistics",
-                type: "datetime2",
-                nullable: false,
-                defaultValue: new DateTime(2021, 6, 2, 11, 14, 23, 22, DateTimeKind.Local).AddTicks(9551),
-                oldClrType: typeof(DateTime),
-                oldType: "datetime2",
-                oldDefaultValue: new DateTime(2021, 5, 27, 16, 17, 34, 543, DateTimeKind.Local).AddTicks(3137));
-
-            migrationBuilder.AlterColumn<DateTime>(
-                name: "TimeStarted",
-                table: "GameRounds",
-                type: "datetime2",
-                nullable: false,
-                defaultValue: new DateTime(2021, 6, 2, 11, 14, 23, 15, DateTimeKind.Local).AddTicks(3037),
-                oldClrType: typeof(DateTime),
-                oldType: "datetime2",
-                oldDefaultValue: new DateTime(2021, 5, 27, 16, 17, 34, 531, DateTimeKind.Local).AddTicks(5373));
-
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -98,6 +78,21 @@ namespace Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_DeviceCodes", x => x.UserCode);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "GameRounds",
+                columns: table => new
+                {
+                    GameRoundId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    NumberOfQuestions = table.Column<int>(type: "int", nullable: false),
+                    TimeStarted = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValue: new DateTime(2021, 6, 3, 13, 51, 44, 410, DateTimeKind.Local).AddTicks(8727)),
+                    TimeEnded = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    QuestionStatisticId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_GameRounds", x => x.GameRoundId);
                 });
 
             migrationBuilder.CreateTable(
@@ -226,6 +221,27 @@ namespace Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "QuestionStatistics",
+                columns: table => new
+                {
+                    QuestionStatisticId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    TimeStarted = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValue: new DateTime(2021, 6, 3, 13, 51, 44, 419, DateTimeKind.Local).AddTicks(3774)),
+                    TimeEnded = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    AnsweredCorrectly = table.Column<bool>(type: "bit", nullable: false),
+                    GameRoundId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_QuestionStatistics", x => x.QuestionStatisticId);
+                    table.ForeignKey(
+                        name: "FK_QuestionStatistics_GameRounds_GameRoundId",
+                        column: x => x.GameRoundId,
+                        principalTable: "GameRounds",
+                        principalColumn: "GameRoundId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -290,6 +306,11 @@ namespace Data.Migrations
                 name: "IX_PersistedGrants_SubjectId_SessionId_Type",
                 table: "PersistedGrants",
                 columns: new[] { "SubjectId", "SessionId", "Type" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_QuestionStatistics_GameRoundId",
+                table: "QuestionStatistics",
+                column: "GameRoundId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -319,30 +340,16 @@ namespace Data.Migrations
                 name: "PersistedGrants");
 
             migrationBuilder.DropTable(
+                name: "QuestionStatistics");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
 
-            migrationBuilder.AlterColumn<DateTime>(
-                name: "TimeStarted",
-                table: "QuestionStatistics",
-                type: "datetime2",
-                nullable: false,
-                defaultValue: new DateTime(2021, 5, 27, 16, 17, 34, 543, DateTimeKind.Local).AddTicks(3137),
-                oldClrType: typeof(DateTime),
-                oldType: "datetime2",
-                oldDefaultValue: new DateTime(2021, 6, 2, 11, 14, 23, 22, DateTimeKind.Local).AddTicks(9551));
-
-            migrationBuilder.AlterColumn<DateTime>(
-                name: "TimeStarted",
-                table: "GameRounds",
-                type: "datetime2",
-                nullable: false,
-                defaultValue: new DateTime(2021, 5, 27, 16, 17, 34, 531, DateTimeKind.Local).AddTicks(5373),
-                oldClrType: typeof(DateTime),
-                oldType: "datetime2",
-                oldDefaultValue: new DateTime(2021, 6, 2, 11, 14, 23, 15, DateTimeKind.Local).AddTicks(3037));
+            migrationBuilder.DropTable(
+                name: "GameRounds");
         }
     }
 }

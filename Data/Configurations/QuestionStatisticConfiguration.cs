@@ -10,10 +10,10 @@ namespace Data.Configurations
         public void Configure(EntityTypeBuilder<QuestionStatistic> builder)
         {
             builder
-                .HasKey(x => x.Id);
+                .HasKey(x => x.QuestionStatisticId);
 
             builder
-                .Property(x => x.Id)
+                .Property(x => x.QuestionStatisticId)
                 .ValueGeneratedOnAdd();
 
             builder
@@ -24,6 +24,11 @@ namespace Data.Configurations
             builder
                 .Property(x => x.TimeEnded)
                 .IsRequired(false);
+
+            builder
+                .HasOne(g => g.GameRound)
+                .WithMany(q => q.QuestionStatistics)
+                .HasForeignKey(g => g.GameRoundId);
         }
     }
 }

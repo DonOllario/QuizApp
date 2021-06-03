@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(QuizAppDbContext))]
-    [Migration("20210602091423_Login")]
-    partial class Login
+    [Migration("20210603115144_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -43,36 +43,39 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.GameRound", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("GameRoundId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("NumberOfQuestions")
                         .HasColumnType("int");
 
+                    b.Property<Guid>("QuestionStatisticId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<DateTime?>("TimeEnded")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("TimeStarted")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2021, 6, 2, 11, 14, 23, 15, DateTimeKind.Local).AddTicks(3037));
+                        .HasDefaultValue(new DateTime(2021, 6, 3, 13, 51, 44, 410, DateTimeKind.Local).AddTicks(8727));
 
-                    b.HasKey("Id");
+                    b.HasKey("GameRoundId");
 
                     b.ToTable("GameRounds");
                 });
 
             modelBuilder.Entity("Data.Models.QuestionStatistic", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("QuestionStatisticId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("AnsweredCorrectly")
                         .HasColumnType("bit");
 
-                    b.Property<Guid?>("GameRoundId")
+                    b.Property<Guid>("GameRoundId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("TimeEnded")
@@ -81,9 +84,9 @@ namespace Data.Migrations
                     b.Property<DateTime>("TimeStarted")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2021, 6, 2, 11, 14, 23, 22, DateTimeKind.Local).AddTicks(9551));
+                        .HasDefaultValue(new DateTime(2021, 6, 3, 13, 51, 44, 419, DateTimeKind.Local).AddTicks(3774));
 
-                    b.HasKey("Id");
+                    b.HasKey("QuestionStatisticId");
 
                     b.HasIndex("GameRoundId");
 
@@ -401,9 +404,13 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.QuestionStatistic", b =>
                 {
-                    b.HasOne("Data.Models.GameRound", null)
+                    b.HasOne("Data.Models.GameRound", "GameRound")
                         .WithMany("QuestionStatistics")
-                        .HasForeignKey("GameRoundId");
+                        .HasForeignKey("GameRoundId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("GameRound");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
