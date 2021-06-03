@@ -26,14 +26,14 @@ You also need to have SSMS SQL installed on your computer.
 1. (You can skip this step if you have SSMS) Download and Install SSMS SQL on your computer. https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
 
 2. Clone the project from GitHub to desired folder.
- --Backend--
-3. Open npm (NuGet Package Manager)
+
+3. Open the project with Visual Studio and open npm (NuGet Package Manager)
 
 4. Enter the following: add-migration. And hit enter.
 
 5. Enter the following: update-database. And hit enter.
- --Frontend--
-6. npm install
+
+6. Enter the folling: npm install. And hit enter.
  
 7. The application is now ready to run.
 
