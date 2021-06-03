@@ -1,0 +1,40 @@
+/* Banner */
+
+
+.header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    background-color: #1D7A8C;
+    height: 4.5rem;
+    width: 100%;
+    top: 0;
+    position:fixed;
+    z-index: +3;
+}
+
+.header-home-img{
+    height: 4.5rem;
+    margin-left: 0.3rem;
+}
+
+.header-login-button {
+    height: 4.5rem;
+    width: 10rem;
+    float: right;
+    font-size: 1.5rem;
+    background-color: #ED8074;
+    border-style: solid;
+    border-color: #00233A;
+    border-radius: 4px;
+    color: #00233A;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.header-login-button .account-icon{
+    padding: 0 12% 0 0;
+}
+
+.header-login-button:hover {
+    background-color: #00233A;
+    border-color:#ED8074;
+    color: #ED8074;
+}

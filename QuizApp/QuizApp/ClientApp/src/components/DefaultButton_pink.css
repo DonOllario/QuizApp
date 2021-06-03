@@ -1,0 +1,23 @@
+﻿.button {
+    transition-duration: 0.4s;
+    border-style: solid;
+    border-color: white;
+    height: 4.5rem;
+    width: 25rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.button_pink {
+    border-color: #ED8074;
+    background-color: #ED8074;
+    color: #00233A;
+}
+
+.button_pink:hover {
+    background-color: #00233A;
+    color: #ED8074;
+}

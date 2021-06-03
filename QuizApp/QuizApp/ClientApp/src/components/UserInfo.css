@@ -1,0 +1,69 @@
+body {
+    background-color: #00233A;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+    color: #00233A;
+}
+
+.wrapper {
+    margin-top: 250px;
+}
+
+.user_info {
+    border-style: solid;
+    border-radius: 6px;
+    border-color: #1D7A8C;
+    background-color: #1D7A8C;
+    padding: 3px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 27rem;
+    height: 32rem;
+    text-align: center;
+}
+
+.KozzQuiz_logo_blue {
+    height: 10rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.button_edit_picture {
+    text-align: center;
+    height: 1.5rem;
+    width: 7rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    border-color: #00233A;
+    background-color: #1D7A8C;
+    color: #00233A;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.button_edit_picture:hover {
+    background-color: #ED8074;
+    border-color: #00233A;
+    color: #00233A;
+}
+
+.button_change_password {
+    text-align: center;
+    height: 1.5rem;
+    width: 7rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    border-color: #00233A;
+    background-color: #1D7A8C;
+    color: #00233A;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.button_change_password:hover {   
+    background-color: #ED8074;
+    border-color: #00233A;  
+    color: #00233A;
+}

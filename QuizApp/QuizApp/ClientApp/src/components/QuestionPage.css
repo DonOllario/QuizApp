@@ -1,0 +1,61 @@
+
+
+
+.questionInfo{
+    margin-top: 250px;
+    text-align: center;
+    color: #F1F1E6;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.aboutToFly{
+    margin-top: 110px;
+    text-align: center;
+}
+
+.bookAnimation-size {width: 315px; height: 250px;}
+
+
+.lightBulb{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.lightBulbSize{
+    margin-top:0%;
+    width: 140px; 
+    height: 210px;
+}
+
+
+
+/*Font sizes to use if we need */
+.display-5{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.display-6 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.display-7 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.display-8 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.display-9 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
