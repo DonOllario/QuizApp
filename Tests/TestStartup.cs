@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using NHibernate.Cfg.ConfigurationSchema;
+using QuizApp.Mappings;
 using System.Data.Common;
 using System.Reflection;
 
