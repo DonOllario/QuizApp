@@ -1,7 +1,7 @@
 # QuizApp
 
 ---Introduction:
-Hi! We are the KOZZ Organization. That consists of the following members: Kristoffer, Zeynab, Oliver, Zara and Yad.
+Hi! We are the KOZZ Organization. That consists of the following members: Kristoffer, Oliver, Zeynab, Zara and Yad.
 
 QuizApp is a schoolproject associated with HandelsAkademin.
 We chose to do a QuizApp because we'd thought it to be fun to learn how to code the gamemechanics and integrate an existing API.
@@ -27,13 +27,15 @@ You also need to have SSMS SQL installed on your computer.
 
 2. Clone the project from GitHub to desired folder.
 
-3. Open npm (NuGet Package Manager)
+3. Open the project with Visual Studio and open npm (NuGet Package Manager)
 
 4. Enter the following: add-migration. And hit enter.
 
 5. Enter the following: update-database. And hit enter.
 
-6. The application is now ready to run.
+6. Enter the folling: npm install. And hit enter.
+ 
+7. The application is now ready to run.
 
 ---How to play:
 
