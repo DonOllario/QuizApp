@@ -1,10 +1,10 @@
 ﻿import React, { Component } from 'react';
 import './Carousel.css';
-import carouselAsset1 from '../assets/test1.png';
-import carouselAsset2 from '../assets/test2.png';
-import carouselAsset3 from '../assets/test3.png';
-import carouselAsset4 from '../assets/test4.png';
-import carouselAsset5 from '../assets/test5.png';
+import carouselAsset1 from '../assets/Answer.PNG';
+import carouselAsset2 from '../assets/EndOfTheGame.PNG';
+import carouselAsset3 from '../assets/Play.PNG';
+import carouselAsset4 from '../assets/AboutToFly.PNG';
+import carouselAsset5 from '../assets/ChooseAnswer.PNG';
 
 export class Carousel extends Component {
 
