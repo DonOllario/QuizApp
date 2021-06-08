@@ -1,7 +1,8 @@
 # QuizApp
 
 ### Introduction:
-Hi! 
+Hi!  
+
 We are the KOZZ Organization. That consists of the following members: Kristoffer, Oliver, Zeynab, Zara and Yad.
 
 QuizApp is a schoolproject associated with HandelsAkademin.
