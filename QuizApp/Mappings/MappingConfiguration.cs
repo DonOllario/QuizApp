@@ -3,6 +3,7 @@ using Data.Models;
 using QuizApp.Controllers.RequestsAndResponses;
 using System;
 
+
 namespace QuizApp.Mappings
 {
     public class MappingConfiguration : Profile
@@ -13,4 +14,5 @@ namespace QuizApp.Mappings
                 .AfterMap((from, to) => to.TimeStarted = DateTime.Now);
         }
     }
+
 }

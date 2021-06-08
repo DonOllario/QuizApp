@@ -1,7 +1,9 @@
 # QuizApp
 
----Introduction:
-Hi! We are the KOZZ Organization. That consists of the following members: Kristoffer, Zeynab, Oliver, Zara and Yad.
+### Introduction:
+Hi!  
+
+We are the KOZZ Organization. That consists of the following members: Kristoffer, Oliver, Zeynab, Zara and Yad.
 
 QuizApp is a schoolproject associated with HandelsAkademin.
 We chose to do a QuizApp because we'd thought it to be fun to learn how to code the gamemechanics and integrate an existing API.
@@ -12,7 +14,7 @@ We from KOZZ Organization hope you will enjoy our project as much as we did maki
 Happy trivia adventures!
 
 
----Prerequisites:
+### Prerequisites:
 To play the game only internet is needed. Here is the link 'GitHub URL Placeholder'
 
 
@@ -22,20 +24,23 @@ You also need to have SSMS SQL installed on your computer.
 
 
 
----How to Install:
-1. (You can skip this step if you have SSMS) Download and Install SSMS SQL on your computer. https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
+### How to Install:
+1. (You can skip this step if you have SSMS) Download and [Install SSMS SQL](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
+ on your computer. 
 
 2. Clone the project from GitHub to desired folder.
 
-3. Open npm (NuGet Package Manager)
+3. Open the project with Visual Studio and open npm (NuGet Package Manager)
 
 4. Enter the following: add-migration. And hit enter.
 
 5. Enter the following: update-database. And hit enter.
 
-6. The application is now ready to run.
+6. Enter the folling: npm install. And hit enter.
+ 
+7. The application is now ready to run.
 
----How to play:
+### How to play:
 
 1. When you're on the frontpage press the play button.
 
