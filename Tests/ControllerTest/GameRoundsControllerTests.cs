@@ -27,12 +27,12 @@ namespace Tests.ControllerTest
             var requestDataAsJson = JsonConvert.SerializeObject(startGameRound);
             var httpContent = new StringContent(requestDataAsJson, Encoding.UTF8, "application/json");
 
-            var response = await Client.PostAsync("gameround", httpContent);
+            var response = await Client.PostAsync("api/gamerounds", httpContent);
 
             response
                 .StatusCode
                 .Should()
-                .Be(HttpStatusCode.OK);
+                .Be(HttpStatusCode.Created);
         }
 
         [Fact]
@@ -44,6 +44,19 @@ namespace Tests.ControllerTest
                 NumberOfQuestions = 10,
                 TimeStarted = DateTime.Now
             };
+
+
+
+
+            var requestDataAsJson = JsonConvert.SerializeObject(AddGame);
+            var httpContent = new StringContent(requestDataAsJson, Encoding.UTF8, "application/json");
+
+            var response = await Client.PostAsync("api/gamerounds", httpContent);
+
+            response
+                .StatusCode
+                .Should()
+                .Be(HttpStatusCode.Created);
         }
     }
 }
