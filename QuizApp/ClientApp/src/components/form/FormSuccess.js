@@ -6,7 +6,7 @@ const FormSuccess = () => {
   return (
     <div className='form-content-right'>
       <h1 className='form-success'>Your Account was created successfully!</h1>
-      <img className='form-img-2' src={Happy_Owl} alt='success-image' />
+      <img className='form-img-2' src={Happy_Owl} alt='success' />
     </div>
   );
 };

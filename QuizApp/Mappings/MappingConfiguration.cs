@@ -3,6 +3,7 @@ using Data.Models;
 using QuizApp.Controllers.RequestsAndResponses;
 using System;
 
+
 namespace QuizApp.Mappings
 {
     public class MappingConfiguration : Profile

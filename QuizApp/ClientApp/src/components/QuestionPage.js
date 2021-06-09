@@ -71,8 +71,11 @@ function QuestionPage() {
                     <img className="lightBulbSize mb-2" src={BlueIdea} alt='BlueIdea' />
                     <div class="display-6">
                         <h1 className="mt-2">More daring adventures are yet to come!</h1>
-                        <img src="https://video-public.canva.com/VAEJyoG5qTU/v/664bb31503.gif"
-                    class="bookAnimation-size mx-auto mb-1"></img>
+                        <img 
+                        src="https://video-public.canva.com/VAEJyoG5qTU/v/664bb31503.gif"
+                        class="bookAnimation-size mx-auto mb-1"
+                        alt="book">
+                        </img>
                     </div>
                 </div>
                 <div className="d-flex justify-content-center"> 

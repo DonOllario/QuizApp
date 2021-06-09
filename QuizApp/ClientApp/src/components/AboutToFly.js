@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Rocket from '../assets/Rocket.png';
-import QuestionPage from './QuestionPage';
+import {Redirect} from 'react-router-dom';
 import './QuestionPage.css';
 
 
@@ -28,7 +28,7 @@ function AboutToFly () {
             </>
 
         ) : (
-            <QuestionPage/>
+            <Redirect to="/QuestionPage" />
         );
     
 }
