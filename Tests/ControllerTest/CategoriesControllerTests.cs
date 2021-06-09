@@ -1,4 +1,5 @@
-﻿using FluentAssertions;
+﻿using Data.Models;
+using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using QuizApp.Controllers.RequestsAndResponses;
@@ -52,26 +53,37 @@ namespace Tests.ControllerTest
             entityInDatabase.Description.Should().Be("Questions about software development");
         }
 
-        //[Fact]
-        //public async Task Should_Return_OK_When_Updating()
-        //{   
-            
-        //    var requestData = new UpdateCategoryRequest
-        //    {
-        //        Name = "Software",
-        //        Description = "Questions about software development"
-        //    };
+        [Fact]
+        public async Task Should_Return_OK_When_Updating()
+        {
+            //Arrange
 
-            
-        //    var requestDataAsJson = JsonConvert.SerializeObject(requestData);
-        //    var httpContent = new StringContent(requestDataAsJson, Encoding.UTF8, "application/json");
-        //    var response = await Client.PatchAsync("api/categories", httpContent);
+            var category = new Category
+            {
+                Name = "Software",
+                Description = "Questions about software development"
+            };
 
-        //    response
-        //        .StatusCode
-        //        .Should()
-        //        .Be(HttpStatusCode.OK);
-        //}
+            Context.Categories.Add(category);
+            Context.SaveChanges();
+
+            //Act
+            var requestData = new UpdateCategoryRequest
+            {
+                Name = "Software",
+                Description = "Questions about software development and hardware"
+            };
+
+            var requestDataAsJson = JsonConvert.SerializeObject(requestData);
+            var httpContent = new StringContent(requestDataAsJson, Encoding.UTF8, "application/json");
+            var response = await Client.PatchAsync($"api/categories/{{category.Id}}", httpContent);
+
+            //Assert
+            response
+                .StatusCode
+                .Should()
+                .Be(HttpStatusCode.OK);
+        }
 
         //[Fact]
         //public async Task Data_Should_Be_Saved_Correctly_When_Updating()
@@ -85,8 +97,8 @@ namespace Tests.ControllerTest
         //    var httpContent = new StringContent(requestDataAsJson, Encoding.UTF8, "application/json");
         //    var response = await Client.PostAsync("api/categories", httpContent);
 
-            //var entityInDatabase = await Context.Categories.FirstOrDefaultAsync(x => x.Name == "Software");
-            //entityInDatabase.Description.Should().Be("Questions about software development");
-       // }
+        //    var entityInDatabase = await Context.Categories.FirstOrDefaultAsync(x => x.Name == "Software");
+        //    entityInDatabase.Description.Should().Be("Questions about software development");
+        //}
     }
 }

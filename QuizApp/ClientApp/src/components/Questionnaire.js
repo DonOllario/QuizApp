@@ -15,8 +15,8 @@ const Questionnaire = ( {
         <div className="quiz-div d-flex flex-column justify-content-center align-items-center">
         <div>
         <img src="https://video-public.canva.com/VAEbzf43_6s/v/bb3cda5406.gif"
-                    className="thinkingCloud-size mx-auto mb-1"></img> 
-        <img className="owl-img" src={headerImage}></img>
+                    className="thinkingCloud-size mx-auto mb-1" alt="cloud"></img> 
+        <img className="owl-img" src={headerImage} alt="owl"></img>
         </div>
         <div>
         <h1 dangerouslySetInnerHTML={{ __html: question }} />
@@ -24,7 +24,7 @@ const Questionnaire = ( {
 
         <div>
         {answers.map((answer) => {
-            const rightOrWrongColor = showAnswers ? answer == correct_answer ? 
+            const rightOrWrongColor = showAnswers ? answer === correct_answer ? 
             'bg-green' 
             : 'bg-red' 
             : 'button_pink';

@@ -10,7 +10,7 @@ function Header (){
     
 
     const handleLoggedInStatus = () => {
-            setIsLoggedIn(true);
+            setIsLoggedIn(!false);
     }
 
     return !isLoggedIn ? (

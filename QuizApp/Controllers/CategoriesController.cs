@@ -55,7 +55,7 @@ namespace QuizApp.Controllers
             return CreatedAtRoute("GetCategory", new { id = response.Id }, response);
         }
 
-        [HttpPatch]
+        [HttpPatch("id:Guid")]
         public async Task<ActionResult<CategoryResponse>> UpdateCategory(Guid id, [FromBody] UpdateCategoryRequest request)
         {
             var categoryUpdate = _context.Categories.Find(id);

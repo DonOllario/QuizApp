@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 using QuizApp.Controllers.RequestsAndResponses;
+using Data.Models;
 
 namespace Tests.ControllerTest
 {
@@ -38,25 +39,22 @@ namespace Tests.ControllerTest
         [Fact]
         public async Task Should_Return_OK_When_Deleting_GameRound()
         {
-            var AddGame = new GameRoundResponse
+            var addGame = new GameRound
             {
-                GameRoundId = new Guid(),
                 NumberOfQuestions = 10,
                 TimeStarted = DateTime.Now
             };
 
+            Context.GameRounds.Add(addGame);
+            Context.SaveChanges();
 
-
-
-            var requestDataAsJson = JsonConvert.SerializeObject(AddGame);
-            var httpContent = new StringContent(requestDataAsJson, Encoding.UTF8, "application/json");
-
-            var response = await Client.PostAsync("api/gamerounds", httpContent);
+            
+            var response = await Client.DeleteAsync($"api/gamerounds/{addGame.GameRoundId}");
 
             response
                 .StatusCode
                 .Should()
-                .Be(HttpStatusCode.Created);
+                .Be(HttpStatusCode.NoContent);
         }
     }
 }

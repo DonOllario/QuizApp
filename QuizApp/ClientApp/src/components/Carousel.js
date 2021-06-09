@@ -113,11 +113,11 @@ export class Carousel extends Component {
         return (
             <div className="gallery">
                 <div className="gallery-container">
-                    <img className="gallery-item gallery-item-1" src={carouselAsset1} data-index="1" />
-                    <img className="gallery-item gallery-item-2" src={carouselAsset2} data-index="2" />
-                    <img className="gallery-item gallery-item-3" src={carouselAsset3} data-index="3" />
-                    <img className="gallery-item gallery-item-4" src={carouselAsset4} data-index="4" />
-                    <img className="gallery-item gallery-item-5" src={carouselAsset5} data-index="5" />
+                    <img className="gallery-item gallery-item-1" src={carouselAsset1} data-index="1" alt="car-1"/>
+                    <img className="gallery-item gallery-item-2" src={carouselAsset2} data-index="2" alt="car-2"/>
+                    <img className="gallery-item gallery-item-3" src={carouselAsset3} data-index="3" alt="car-3"/>
+                    <img className="gallery-item gallery-item-4" src={carouselAsset4} data-index="4" alt="car-4"/>
+                    <img className="gallery-item gallery-item-5" src={carouselAsset5} data-index="5" alt="car-5"/>
                 </div>
                 <div className="gallery-controls"></div>
             </div>
