@@ -45,16 +45,19 @@ namespace Tests.ControllerTest
                 TimeStarted = DateTime.Now
             };
 
+
             Context.GameRounds.Add(addGame);
             Context.SaveChanges();
 
             
             var response = await Client.DeleteAsync($"api/gamerounds/{addGame.GameRoundId}");
 
+
             response
                 .StatusCode
                 .Should()
                 .Be(HttpStatusCode.NoContent);
+
         }
     }
 }

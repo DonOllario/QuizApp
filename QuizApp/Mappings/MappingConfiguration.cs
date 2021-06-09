@@ -14,5 +14,4 @@ namespace QuizApp.Mappings
                 .AfterMap((from, to) => to.TimeStarted = DateTime.Now);
         }
     }
-
 }

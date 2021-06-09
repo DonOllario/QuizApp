@@ -1,4 +1,4 @@
-﻿using Data.Models;
+using Data.Models;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -84,6 +84,26 @@ namespace Tests.ControllerTest
                 .Should()
                 .Be(HttpStatusCode.OK);
         }
+        //[Fact]
+        //public async Task Should_Return_OK_When_Updating()
+        //{   
+            
+        //    var requestData = new UpdateCategoryRequest
+        //    {
+        //        Name = "Software",
+        //        Description = "Questions about software development"
+        //    };
+
+            
+        //    var requestDataAsJson = JsonConvert.SerializeObject(requestData);
+        //    var httpContent = new StringContent(requestDataAsJson, Encoding.UTF8, "application/json");
+        //    var response = await Client.PatchAsync("api/categories", httpContent);
+
+        //    response
+        //        .StatusCode
+        //        .Should()
+        //        .Be(HttpStatusCode.OK);
+        //}
 
         //[Fact]
         //public async Task Data_Should_Be_Saved_Correctly_When_Updating()
