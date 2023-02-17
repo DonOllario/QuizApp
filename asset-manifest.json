@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7754383d.chunk.css",
+    "main.js": "/static/js/main.ead39275.chunk.js",
+    "main.js.map": "/static/js/main.ead39275.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ed5bfbd4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ed5bfbd4.js.map",
+    "static/css/2.56e33495.chunk.css": "/static/css/2.56e33495.chunk.css",
+    "static/js/2.0e5d8bd0.chunk.js": "/static/js/2.0e5d8bd0.chunk.js",
+    "static/js/2.0e5d8bd0.chunk.js.map": "/static/js/2.0e5d8bd0.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4c9675216ba4fc91e1acd704e966a6fd.js": "/precache-manifest.4c9675216ba4fc91e1acd704e966a6fd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.56e33495.chunk.css.map": "/static/css/2.56e33495.chunk.css.map",
+    "static/css/main.7754383d.chunk.css.map": "/static/css/main.7754383d.chunk.css.map",
+    "static/js/2.0e5d8bd0.chunk.js.LICENSE.txt": "/static/js/2.0e5d8bd0.chunk.js.LICENSE.txt",
+    "static/media/AboutToFly.PNG": "/static/media/AboutToFly.0393f88f.PNG",
+    "static/media/Answer.PNG": "/static/media/Answer.38a6edd0.PNG",
+    "static/media/BlueIdea.png": "/static/media/BlueIdea.73bca727.png",
+    "static/media/ChooseAnswer.PNG": "/static/media/ChooseAnswer.592e9a33.PNG",
+    "static/media/EndOfTheGame.PNG": "/static/media/EndOfTheGame.abdaac62.PNG",
+    "static/media/Happy_Owl.gif": "/static/media/Happy_Owl.038a6dab.gif",
+    "static/media/KozzQuiz_logo_header.png": "/static/media/KozzQuiz_logo_header.82b4ac78.png",
+    "static/media/KozzQuiz_logo_header_blue.png": "/static/media/KozzQuiz_logo_header_blue.53d61616.png",
+    "static/media/KozzQuiz_logo_svg.svg": "/static/media/KozzQuiz_logo_svg.717a5f11.svg",
+    "static/media/Play.PNG": "/static/media/Play.5e23a594.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed5bfbd4.js",
+    "static/css/2.56e33495.chunk.css",
+    "static/js/2.0e5d8bd0.chunk.js",
+    "static/css/main.7754383d.chunk.css",
+    "static/js/main.ead39275.chunk.js"
+  ]
+}
