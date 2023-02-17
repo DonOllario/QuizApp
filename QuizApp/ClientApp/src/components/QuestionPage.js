@@ -79,7 +79,7 @@ function QuestionPage() {
                     </div>
                 </div>
                 <div className="d-flex justify-content-center"> 
-                    <Link to="/">
+                    <Link to="/QuizApp">
                     <DefaultButton_blue value="Return to main menu" className="mr-3"/>
                     </Link>
                     <button className="button button_pink ml-3" onClick={() => window.location.reload(false)}>Venture Now</button>

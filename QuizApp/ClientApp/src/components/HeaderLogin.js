@@ -8,10 +8,10 @@ export class HeaderLogin extends Component {
     render(){
         return(
         <header className="header">
-            <Link to="/">
+            <Link to="/QuizApp">
                 <img className="header-home-img" src={homeImage} alt="home_logo"></img>
             </Link>
-            <Link to="/FormLogin">
+            <Link to="/QuizApp/FormLogin">
                 <button type="button" class="header-login-button align-items-center" data-toggle="modal" data-target="#logInModal"><i class="account-icon fas fa-user-circle fa-2x"></i><span >Log in</span></button>
             </Link>
             <LoginMenu>

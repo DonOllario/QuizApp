@@ -28,7 +28,7 @@ function AboutToFly () {
             </>
 
         ) : (
-            <Redirect to="/QuestionPage" />
+            <Redirect to="/QuizApp/QuestionPage" />
         );
     
 }

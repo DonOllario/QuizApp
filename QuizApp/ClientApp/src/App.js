@@ -23,14 +23,14 @@ export default class App extends Component {
       <Router>
         <Header />
         <Switch>
-          <Route exact path='/' component={Frontpage} />
-          <Route path='/FormLogin' component={FormLogin} />
-          <Route path='/FormSignup' component={FormSignup} />
-          <Route path='/AboutToFly' component={AboutToFly} />
-          <Route path='/QuestionPage' component={QuestionPage} />
-          <Route path='/Highscore' component={Highscore} />
-          <Route path='/UserInfo' component={UserInfo} />
-          <AuthorizeRoute path='/UserInfo' component={UserInfo} />
+          <Route exact path='/QuizApp' component={Frontpage} />
+          <Route path='/QuizApp/FormLogin' component={FormLogin} />
+          <Route path='/QuizApp/FormSignup' component={FormSignup} />
+          <Route path='/QuizApp/AboutToFly' component={AboutToFly} />
+          <Route path='/QuizApp/QuestionPage' component={QuestionPage} />
+          <Route path='/QuizApp/Highscore' component={Highscore} />
+          <Route path='/QuizApp/UserInfo' component={UserInfo} />
+          <AuthorizeRoute path='/QuizApp/UserInfo' component={UserInfo} />
           <Route path={ApplicationPaths.ApiAuthorizationPrefix} component={ApiAuthorizationRoutes} />
         </Switch>
       </Router>

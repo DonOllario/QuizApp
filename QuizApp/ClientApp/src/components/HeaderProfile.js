@@ -9,11 +9,11 @@ export class HeaderProfile extends Component {
         return(
         <header className="header">
 
-            <Link to="/">
+            <Link to="/QuizApp">
                 <img className="header-home-img" src={homeImage} alt="home_logo"></img>
             </Link>
 
-            <Link to="/UserInfo">
+            <Link to="/QuizApp/UserInfo">
                 <button type="button" className="header-login header-login-button dropbtn"><img className="profile-img" src={profileImage} alt="blue-owl"></img>Profile</button>
             </Link>
 

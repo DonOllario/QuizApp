@@ -60,4 +60,9 @@ P {
     border-top: none;
     margin-left: 35rem;
     margin-right: 35rem;
+
+    
+}
+.tabcontent h2{
+    color: #ED8074;
 }

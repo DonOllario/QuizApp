@@ -47,7 +47,7 @@ const FormLoginProps = ({ submitForm }) => {
         <button className='form-input-btn' type='submit'>
           Log in
         </button>
-        <Link to="/FormSignup">
+        <Link to="/QuizApp/FormSignup">
         <span className='form-input-login'>
           Don't have an account? Signup <a href='#'>here</a>
         </span>
