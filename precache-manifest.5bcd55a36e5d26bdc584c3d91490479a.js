@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "68313bc9b3f7f5a023a76480cdb1cce2",
+    "revision": "e96db9671e8b6e93b5345b3f18463119",
     "url": "/QuizApp/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/QuizApp/static/css/2.56e33495.chunk.css"
   },
   {
-    "revision": "49514223b619fded2b91",
-    "url": "/QuizApp/static/css/main.7754383d.chunk.css"
+    "revision": "78efbc51984af1ed7501",
+    "url": "/QuizApp/static/css/main.98231d21.chunk.css"
   },
   {
     "revision": "5336405bc2a36f2c3e87",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/QuizApp/static/js/2.0e5d8bd0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "49514223b619fded2b91",
-    "url": "/QuizApp/static/js/main.952baccd.chunk.js"
+    "revision": "78efbc51984af1ed7501",
+    "url": "/QuizApp/static/js/main.e8d43cce.chunk.js"
   },
   {
     "revision": "e4180913cac9c2f2f7b9",
