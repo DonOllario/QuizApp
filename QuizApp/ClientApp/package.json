@@ -24,6 +24,7 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.3",
+    "gh-pages": "^5.0.0",
     "nan": "^2.14.1",
     "typescript": "^3.7.5"
   },
@@ -35,7 +36,9 @@
     "build": "react-scripts build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src/"
+    "lint": "eslint ./src/",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "browserslist": {
     "production": [
